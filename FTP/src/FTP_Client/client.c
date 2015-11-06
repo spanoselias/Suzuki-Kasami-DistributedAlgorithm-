@@ -101,7 +101,6 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
         ftp_header.filename=strtok(NULL," ");
     }
 
-
 }
 
 
