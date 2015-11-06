@@ -13,11 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FTP_Client/sample.txt_383" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/cli" afterPath="$PROJECT_DIR$/src/FTP_Client/cli" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Replica/ser" afterPath="$PROJECT_DIR$/src/Replica/ser" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/src/FTP_Client/client.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Replica/server.c" afterPath="$PROJECT_DIR$/src/Replica/server.c" />
     </list>
     <ignored path="FTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.72392637">
+              <caret line="240" column="17" selection-start-line="240" selection-start-column="17" selection-end-line="240" selection-end-column="17" />
               <folding>
                 <element signature="e#2709#4058#0" expanded="false" />
               </folding>
@@ -60,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="client.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83435583">
-              <caret line="138" column="14" selection-start-line="138" selection-start-column="14" selection-end-line="138" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding>
                 <element signature="e#1191#2540#0" expanded="false" />
                 <element signature="e#2542#3378#0" expanded="false" />
@@ -87,8 +83,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/server.c" />
         <option value="$PROJECT_DIR$/src/client.c" />
-        <option value="$PROJECT_DIR$/src/FTP_Client/client.c" />
         <option value="$PROJECT_DIR$/src/Replica/server.c" />
+        <option value="$PROJECT_DIR$/src/FTP_Client/client.c" />
       </list>
     </option>
   </component>
@@ -301,23 +297,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
+    <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
-            <element signature="e#2709#4058#0" expanded="false" />
+            <element signature="e#1191#2540#0" expanded="false" />
+            <element signature="e#2542#3378#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
+    <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83435583">
-          <caret line="138" column="14" selection-start-line="138" selection-start-column="14" selection-end-line="138" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.72392637">
+          <caret line="240" column="17" selection-start-line="240" selection-start-column="17" selection-end-line="240" selection-end-column="17" />
           <folding>
-            <element signature="e#1191#2540#0" expanded="false" />
-            <element signature="e#2542#3378#0" expanded="false" />
+            <element signature="e#2709#4058#0" expanded="false" />
           </folding>
         </state>
       </provider>

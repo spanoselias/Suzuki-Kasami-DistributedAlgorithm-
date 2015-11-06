@@ -117,7 +117,6 @@ int establish_conn(char *server_ip , int port)
 }
 
 
-
 int main(int argc , char  *argv[])
 {
 
@@ -171,7 +170,6 @@ int main(int argc , char  *argv[])
         }
 
     }while(strcmp(cmdbuf,"exit") !=0);
-
 
 
     return 0;
