@@ -209,7 +209,6 @@ int main(int argc , char  *argv[])
         clientPtr=(struct sockaddr *) &client_addr;
         clientlen= sizeof(client_addr);
 
-
         if((newsock=accept(servSock , clientPtr , &clientlen)) < 0){
             perror("accept() failed"); exit(1);}
 

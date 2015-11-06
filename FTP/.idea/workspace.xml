@@ -13,6 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/src/FTP_Client/client.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Replica/server.c" afterPath="$PROJECT_DIR$/src/Replica/server.c" />
     </list>
     <ignored path="FTP.iws" />
@@ -44,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7791411">
-              <caret line="241" column="17" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="234" column="67" selection-start-line="234" selection-start-column="16" selection-end-line="234" selection-end-column="67" />
               <folding>
                 <element signature="e#2709#4058#0" expanded="false" />
               </folding>
@@ -56,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.61349696">
+              <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
               <folding>
                 <element signature="e#1191#2540#0" expanded="false" />
                 <element signature="e#2542#3378#0" expanded="false" />
@@ -83,8 +84,8 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/server.c" />
         <option value="$PROJECT_DIR$/src/client.c" />
-        <option value="$PROJECT_DIR$/src/FTP_Client/client.c" />
         <option value="$PROJECT_DIR$/src/Replica/server.c" />
+        <option value="$PROJECT_DIR$/src/FTP_Client/client.c" />
       </list>
     </option>
   </component>
@@ -297,23 +298,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
+    <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <caret line="234" column="67" selection-start-line="234" selection-start-column="16" selection-end-line="234" selection-end-column="67" />
           <folding>
-            <element signature="e#1191#2540#0" expanded="false" />
-            <element signature="e#2542#3378#0" expanded="false" />
+            <element signature="e#2709#4058#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
+    <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7791411">
-          <caret line="241" column="17" selection-start-line="241" selection-start-column="17" selection-end-line="241" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.61349696">
+          <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
           <folding>
-            <element signature="e#2709#4058#0" expanded="false" />
+            <element signature="e#1191#2540#0" expanded="false" />
+            <element signature="e#2542#3378#0" expanded="false" />
           </folding>
         </state>
       </provider>
