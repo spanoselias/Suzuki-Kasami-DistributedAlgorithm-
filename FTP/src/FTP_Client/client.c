@@ -160,13 +160,15 @@ int main(int argc , char  *argv[])
 
     get_file(buffer,sock,filename);
 
-
+    printf("ftp to %s" , server_ip);
     do
     {
+        fgets(cmdbuf,sizeof(cmdbuf), stdin)
 
 
 
-    }
+
+    }while(strcmp(cmdbuf,"exit") !=0);
 
 
 
