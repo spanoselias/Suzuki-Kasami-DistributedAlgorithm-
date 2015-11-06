@@ -135,6 +135,8 @@ int main(int argc , char  *argv[])
     char     *server_ip;
     char     *filename;
     int       bytes;
+    /*Store command from ftp client*/
+    char      *cmdbuf[1024];
 
     //Check of input arguments
     if(argc!=4)
@@ -157,6 +159,15 @@ int main(int argc , char  *argv[])
     /* Receiving file size */
 
     get_file(buffer,sock,filename);
+
+
+    do
+    {
+
+
+
+    }
+
 
 
     return 0;
