@@ -140,12 +140,6 @@ int ftp_recv(char *buffer , int sock, char *filename )
 
 }
 
-int read_cmd(char *cmd_str  )
-{
-    
-
-}
-
 
 int main(int argc , char  *argv[])
 {

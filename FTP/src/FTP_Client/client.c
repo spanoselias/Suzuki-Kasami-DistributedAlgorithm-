@@ -83,6 +83,14 @@ int get_file(char *buffer , int sock, char *filename )
 
 }
 
+int read_cmd(char *cmd_str  )
+{
+    
+
+
+}
+
+
 int establish_conn(char *server_ip , int port)
 {
     int sock;
