@@ -12,9 +12,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/src/FTP_Client/client.c" />
-    </list>
+    <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="" />
     <ignored path="FTP.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,10 +57,11 @@
       <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20245399">
-              <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.65030676">
+              <caret line="196" column="12" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="12" />
               <folding>
                 <element signature="e#1251#2600#0" expanded="false" />
+                <element signature="e#2602#2874#0" expanded="false" />
                 <element signature="e#2877#3713#0" expanded="false" />
               </folding>
             </state>
@@ -309,10 +308,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20245399">
-          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.65030676">
+          <caret line="196" column="12" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="12" />
           <folding>
             <element signature="e#1251#2600#0" expanded="false" />
+            <element signature="e#2602#2874#0" expanded="false" />
             <element signature="e#2877#3713#0" expanded="false" />
           </folding>
         </state>
