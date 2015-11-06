@@ -4,6 +4,10 @@
 
 while :
 do
+	
+	git add --all
+	git commit -m "implementing ftp"
+	git push		
+	sleep 10
 	echo "Press [CTRL+C] to stop.."
-	sleep 1
 done
