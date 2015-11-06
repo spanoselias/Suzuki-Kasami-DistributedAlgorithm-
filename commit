@@ -8,5 +8,6 @@ do
 	git commit -m "implementing ftp"
 	git push		
 	sleep 60
+	echo "slepping for 60 seconds"
 	echo "Press [CTRL+C] to stop.."
 done
