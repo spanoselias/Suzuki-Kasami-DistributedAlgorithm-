@@ -1,0 +1,28 @@
+Connection established to host: 127.0.0.1 , PORT 10001
+Connection established to host: 127.0.0.1 , PORT 10002
+Connection established to host: 127.0.0.1 , PORT 10003
+DebugResult:3
+MessageMajor: RREAD-OK,10,5,20,1
+Before going to is_major:1
+MessageMajor: RREAD-OK,10,5,20,1
+Before going to is_major:2
+MessageMajor: RREAD-OK,10,5,20,1
+Before going to is_major:3
+Outside
+TagNum:-1
+TagID:-1
+ABD READER SECOND PHASE
+DebugResult:3
+MessageMajor: RWRITE-OK,2
+
+Before going to is_major:1
+MessageMajor: RWRITE-OK,2
+
+Before going to is_major:2
+MessageMajor: RWRITE-OK,2
+
+Before going to is_major:3
+Outside
+*************************************************************************
+Read operation completed: Value: -742316752 , tagNum:-1 , tagID:-1
+*************************************************************************
