@@ -99,7 +99,7 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
 
     if(strcmp(cmd , "get" ) == 0)
     {
-        ftp_header.filename=strtok(NULL," ");
+        strcpy(ftp_header.filename ,strtok(NULL," "));
     }
 
     return 1;

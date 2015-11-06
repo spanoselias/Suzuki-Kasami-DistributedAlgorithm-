@@ -59,11 +59,11 @@
       <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42944786">
-              <caret line="157" column="24" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.5030675">
+              <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
               <folding>
                 <element signature="e#1250#2599#0" expanded="false" />
-                <element signature="e#2876#3712#0" expanded="false" />
+                <element signature="e#2885#3721#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -312,11 +312,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42944786">
-          <caret line="157" column="24" selection-start-line="157" selection-start-column="24" selection-end-line="157" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.5030675">
+          <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
           <folding>
             <element signature="e#1250#2599#0" expanded="false" />
-            <element signature="e#2876#3712#0" expanded="false" />
+            <element signature="e#2885#3721#0" expanded="false" />
           </folding>
         </state>
       </provider>
