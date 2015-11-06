@@ -194,13 +194,9 @@ int main(int argc , char  *argv[])
         fgets(cmdbuf,sizeof(cmdbuf), stdin);
         read_cmd(cmdbuf,ftp_header);
 
-        if(s)
-
-
-
-        if(strcmp(cmdbuf,"get_file")==0)
+        if(strcmp(ftp_header.cmd , "get")==0)
         {
-            get_file(buffer,sock,filename);
+            get_file(buffer,sock,ftp_header.filename);
         }
 
     }while(strcmp(cmdbuf,"exit") !=0);
