@@ -157,7 +157,7 @@ int main(int argc , char  *argv[])
     /*The ftp server ip*/
     char     *server_ip;
     /*File name*/
-    char     filename[];
+    char     filename[255];
     int       bytes;
     /*Store command from ftp client*/
     char      cmdbuf[1024];
