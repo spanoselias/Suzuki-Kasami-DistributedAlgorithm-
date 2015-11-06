@@ -28,7 +28,7 @@
 
 int ftp_send(char *filename , int newsock)
 {
-    int         fd;
+    FILE         *fp;
     off_t       offset = 0;
     int         remain_data;
     int         sent_bytes;
@@ -38,7 +38,7 @@ int ftp_send(char *filename , int newsock)
 
 
     printf("FileNAmeIn:%s" , filename);
-    fd = open(filename,  O_RDONLY);
+    fp = fopen(filename,  O_RDONLY);
     if (fd < 0 )
     {
         fprintf(stderr, "Error opening file --> %s", strerror(errno));
