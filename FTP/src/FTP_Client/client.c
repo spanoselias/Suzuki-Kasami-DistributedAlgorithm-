@@ -85,10 +85,12 @@ int get_file(char *buffer , int sock, char *filename )
 
 int read_cmd(char *cmd_str  )
 {
+    char *cmd;
 
     /* get the first token */
-    token = strtok(cmd_str, s)
+    cmd = strtok(cmd_str, " ");
 
+    if(strcmp(cmd ,  ))
 
 
 }
