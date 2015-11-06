@@ -164,6 +164,7 @@ int main(int argc , char  *argv[])
 
     /*Store information for ftp header*/
     struct FTP_HEADER ftp_header;
+    ftp_header.filename=(char *)malloc(sizeof(char) * 255);
 
     //Check of input arguments
     if(argc!=4)
@@ -176,7 +177,6 @@ int main(int argc , char  *argv[])
     server_ip=(char*)malloc(sizeof(char) * strlen(argv[1]));
     filename=(char*)malloc(sizeof(char) * strlen(argv[3]));
     strcpy(server_ip,argv[1]);
-    strcpy(filename , argv[3] );
     port=atoi(argv[2]);
 
     /*Establish connection with ftp server*/
