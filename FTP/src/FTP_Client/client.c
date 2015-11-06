@@ -83,39 +83,8 @@ int get_file(char *buffer , int sock, char *filename )
 
 }
 
-
-
-int main(int argc , char  *argv[])
+int establish_conn(char *server_ip , int port)
 {
-
-/***********************************************************************************/
-/*                                   LOCAL VARIABLES                               */
-/***********************************************************************************/
-    char     buffer[BUFSIZE];/*Buffer to send*receive data*/
-    int      file_size;
-    int      remain_data = 0;
-    int      len;
-
-    //Input parameters variables
-    int      port;
-    char     *server_ip;
-    char     *filename;
-    int       bytes;
-
-    //Check of input arguments
-    if(argc!=4)
-    {
-        printf("\nUsage: argv[0] [SERVER_IP] [PORT] [filename]\n");
-        exit(-1);
-    }
-
-    //Retrieve input parameters
-    server_ip=(char*)malloc(sizeof(char) * strlen(argv[1]));
-    filename=(char*)malloc(sizeof(char) * strlen(argv[3]));
-    strcpy(server_ip,argv[1]);
-    strcpy(filename , argv[3] );
-    port=atoi(argv[2]);
-
     /*Create a socket and check if is created correct.*/
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
@@ -141,6 +110,44 @@ int main(int argc , char  *argv[])
 
     printf("***********************************\n");
     printf("Request connection to port %d\n", port);
+
+}
+
+
+
+int main(int argc , char  *argv[])
+{
+
+/***********************************************************************************/
+/*                                   LOCAL VARIABLES                               */
+/***********************************************************************************/
+    char     buffer[BUFSIZE];/*Buffer to send*receive data*/
+    int      file_size;
+    int      remain_data = 0;
+    int      len;
+    int      sock; //Store Socket descriptor
+
+    //Input parameters variables
+    int      port;
+    char     *server_ip;
+    char     *filename;
+    int       bytes;
+
+    //Check of input arguments
+    if(argc!=4)
+    {
+        printf("\nUsage: argv[0] [SERVER_IP] [PORT] [filename]\n");
+        exit(-1);
+    }
+
+    //Retrieve input parameters
+    server_ip=(char*)malloc(sizeof(char) * strlen(argv[1]));
+    filename=(char*)malloc(sizeof(char) * strlen(argv[3]));
+    strcpy(server_ip,argv[1]);
+    strcpy(filename , argv[3] );
+    port=atoi(argv[2]);
+
+
 
 
     bzero(buffer, sizeof(BUFSIZE));
