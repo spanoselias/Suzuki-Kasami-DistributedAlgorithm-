@@ -46,7 +46,7 @@ int ftp_send(char *filename , int newsock)
     }
 
     /* Get file stats */
-    if (fstat(fd, &file_stat) < 0)
+    if (fstat(fp, &file_stat) < 0)
     {
         printf("Error fstat");
         close(newsock);
@@ -71,7 +71,7 @@ int ftp_send(char *filename , int newsock)
 
     remain_data = file_stat.st_size;
     /* Sending file data */
-    while (((sent_bytes = sendfile(newsock, fd, &offset, BUFSIZE)) > 0) && (remain_data > 0))
+    while (((sent_bytes = sendfile(newsock, fp, &offset, BUFSIZE)) > 0) && (remain_data > 0))
     {
         remain_data -= sent_bytes;
         fprintf(stdout, "Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
@@ -79,7 +79,7 @@ int ftp_send(char *filename , int newsock)
     }
     printf("Finish sending\n");
     close(newsock);
-    close(fd);
+    close(fp;
 
     return true;
 
