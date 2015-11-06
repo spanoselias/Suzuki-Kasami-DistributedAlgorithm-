@@ -137,7 +137,6 @@ int ftp_recv(char *buffer , int sock, char *filename )
 
     fclose(received_file);
     close(sock);
-
 }
 
 
