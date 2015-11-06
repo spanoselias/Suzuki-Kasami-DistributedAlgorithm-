@@ -23,9 +23,9 @@
 
 #define  DEBUG 
 
-struct ftp_header
+struct FTP_HEADER
 {
-    
+    char *filename;
 
 };
 
