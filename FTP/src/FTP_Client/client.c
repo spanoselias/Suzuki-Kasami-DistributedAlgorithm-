@@ -87,7 +87,7 @@ int read_cmd(char *cmd_str  )
 {
 
     /* get the first token */
-    token = strtok(str, s)
+    token = strtok(cmd_str, s)
 
 
 
