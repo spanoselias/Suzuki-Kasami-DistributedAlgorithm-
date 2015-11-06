@@ -48,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6302953">
-              <caret line="231" column="43" selection-start-line="231" selection-start-column="43" selection-end-line="231" selection-end-column="43" />
+              <caret line="231" column="35" selection-start-line="231" selection-start-column="32" selection-end-line="231" selection-end-column="35" />
               <folding>
                 <element signature="e#1202#2621#0" expanded="false" />
                 <element signature="e#2623#3971#0" expanded="false" />
@@ -332,7 +332,7 @@
     <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6302953">
-          <caret line="231" column="43" selection-start-line="231" selection-start-column="43" selection-end-line="231" selection-end-column="43" />
+          <caret line="231" column="35" selection-start-line="231" selection-start-column="32" selection-end-line="231" selection-end-column="35" />
           <folding>
             <element signature="e#1202#2621#0" expanded="false" />
             <element signature="e#2623#3971#0" expanded="false" />
