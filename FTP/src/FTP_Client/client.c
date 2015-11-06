@@ -171,6 +171,5 @@ int main(int argc , char  *argv[])
 
     }while(strcmp(cmdbuf,"exit") !=0);
 
-
     return 0;
 }

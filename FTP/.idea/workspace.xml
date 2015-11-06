@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/src/FTP_Client/client.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Replica/server.c" afterPath="$PROJECT_DIR$/src/Replica/server.c" />
     </list>
     <ignored path="FTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +59,8 @@
       <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61349696">
-              <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.85276073">
+              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
               <folding>
                 <element signature="e#1191#2540#0" expanded="false" />
                 <element signature="e#2542#3378#0" expanded="false" />
@@ -310,8 +309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61349696">
-          <caret line="161" column="25" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.85276073">
+          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
           <folding>
             <element signature="e#1191#2540#0" expanded="false" />
             <element signature="e#2542#3378#0" expanded="false" />
