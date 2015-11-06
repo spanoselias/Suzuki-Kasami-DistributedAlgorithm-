@@ -163,6 +163,7 @@ int main(int argc , char  *argv[])
 
     /*Store information for ftp header*/
     struct FTP_HEADER ftp_header;
+    ftp_header.cmd=(char *)malloc(sizeof(char) * 20);
     ftp_header.filename=(char *)malloc(sizeof(char) * 255);
 
     //Check of input arguments
