@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#This script automate the process of commiting in github
+
+while :
+do
+	echo "Press [CTRL+C] to stop.."
+	git add --all
+	git commit -m "implementing ftp"
+	git push		
+	sleep 10
+done

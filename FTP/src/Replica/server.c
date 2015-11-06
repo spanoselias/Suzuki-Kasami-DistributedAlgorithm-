@@ -143,23 +143,6 @@ int ftp_recv(char *buffer , int sock, char *filename )
 }
 
 
-int cmd (char *cmd_name , int *isrun )
-{
-    int cmd_no=-1;
-
-    if(strcmp(cmd_name , "get") == 0)
-    {cmd_no=0;}
-    else if(strcmp(cmd_name,"put")==0)
-    {cmd_no=1;}
-
-    switch(cmd_no)
-    {
-        case 0:
-
-    }//Switch
-
-}
-
 int main(int argc , char  *argv[])
 {
 

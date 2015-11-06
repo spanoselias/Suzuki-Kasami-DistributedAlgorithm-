@@ -136,7 +136,7 @@ int main(int argc , char  *argv[])
     char     *filename;
     int       bytes;
     /*Store command from ftp client*/
-    char      *cmdbuf[1024];
+    char      cmdbuf[1024];
 
     //Check of input arguments
     if(argc!=4)
@@ -163,10 +163,12 @@ int main(int argc , char  *argv[])
     printf("ftp to %s" , server_ip);
     do
     {
-        fgets(cmdbuf,sizeof(cmdbuf), stdin)
+        fgets(cmdbuf,sizeof(cmdbuf), stdin);
 
-
-
+        if(strcmp(cmdbuf,"get_file")==0)
+        {
+            get_file(buffer,sock,filename);
+        }
 
     }while(strcmp(cmdbuf,"exit") !=0);
 

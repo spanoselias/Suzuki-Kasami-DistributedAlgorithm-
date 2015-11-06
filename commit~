@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#This script automate the process of commiting in github
+
+while :
+do
+	echo "Press [CTRL+C] to stop.."
+	sleep 1
+done
