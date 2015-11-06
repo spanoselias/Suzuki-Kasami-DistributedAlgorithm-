@@ -194,7 +194,7 @@ int main(int argc , char  *argv[])
         fgets(cmdbuf,sizeof(cmdbuf), stdin);
         read_cmd(cmdbuf,ftp_header);
 
-        if()
+        if(s)
 
 
 
