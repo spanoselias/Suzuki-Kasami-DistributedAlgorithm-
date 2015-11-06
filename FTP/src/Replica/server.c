@@ -37,6 +37,7 @@ int ftp_send(char *filename , int newsock)
     int         file_size;
 
 
+    printf("FileNAmeIn: %s" , filename);
     fd = open(filename,  O_RDONLY);
     if (fd == -1)
     {
