@@ -7,7 +7,7 @@ do
 	git add --all
 	git commit -m "implementing ftp"
 	git push		
-	sleep 60
+	sleep 5
 	echo "slepping for 60 seconds"
 	echo "Press [CTRL+C] to stop.."
 done
