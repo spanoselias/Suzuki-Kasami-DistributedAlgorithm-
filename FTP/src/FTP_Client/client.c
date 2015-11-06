@@ -23,7 +23,7 @@
 
 #define  DEBUG 
 
-int sock,serverlen;
+int serverlen;
 
 struct sockaddr_in server;
 struct sockaddr *serverPtr;
@@ -85,6 +85,8 @@ int get_file(char *buffer , int sock, char *filename )
 
 int establish_conn(char *server_ip , int port)
 {
+    int sock;
+    
     /*Create a socket and check if is created correct.*/
     if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
@@ -147,7 +149,7 @@ int main(int argc , char  *argv[])
     strcpy(filename , argv[3] );
     port=atoi(argv[2]);
 
-
+    s
 
 
     bzero(buffer, sizeof(BUFSIZE));
