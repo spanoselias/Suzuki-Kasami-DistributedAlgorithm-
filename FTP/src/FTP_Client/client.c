@@ -166,7 +166,7 @@ int main(int argc , char  *argv[])
     ftp_header.filename=(char *)malloc(sizeof(char) * 255);
 
     //Check of input arguments
-    if(argc!=4)
+    if(argc!=3)
     {
         printf("\nUsage: argv[0] [SERVER_IP] [PORT] [filename]\n");
         exit(-1);
