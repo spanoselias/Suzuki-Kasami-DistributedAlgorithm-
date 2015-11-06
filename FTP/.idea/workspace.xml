@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/src/FTP_Client/client.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FTP.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +59,11 @@
       <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29447854">
-              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.73619634">
+              <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
               <folding>
-                <element signature="e#1237#2586#0" expanded="false" />
-                <element signature="e#2752#3588#0" expanded="false" />
+                <element signature="e#1236#2585#0" expanded="false" />
+                <element signature="e#2825#3661#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -310,11 +309,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29447854">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.73619634">
+          <caret line="100" column="45" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
           <folding>
-            <element signature="e#1237#2586#0" expanded="false" />
-            <element signature="e#2752#3588#0" expanded="false" />
+            <element signature="e#1236#2585#0" expanded="false" />
+            <element signature="e#2825#3661#0" expanded="false" />
           </folding>
         </state>
       </provider>
