@@ -240,7 +240,6 @@ int main(int argc , char  *argv[])
                     printf("Error ftp_send()");
                 }
         }//Switch
-
     }//While(1)
 
     return 0;
