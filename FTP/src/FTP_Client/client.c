@@ -23,6 +23,12 @@
 
 #define  DEBUG 
 
+struct ftp_header
+{
+    
+};
+
+
 int serverlen;
 
 struct sockaddr_in server;
@@ -90,7 +96,10 @@ int read_cmd(char *cmd_str  )
     /* get the first token */
     cmd = strtok(cmd_str, " ");
 
-    if(strcmp(cmd ,  ))
+    if(strcmp(cmd , "get" ) == 0)
+    {
+
+    }
 
 
 }
