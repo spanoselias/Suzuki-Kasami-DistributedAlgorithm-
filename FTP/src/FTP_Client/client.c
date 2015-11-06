@@ -186,8 +186,6 @@ int main(int argc , char  *argv[])
     bzero(buffer, sizeof(BUFSIZE));
     /* Receiving file size */
 
-    get_file(buffer,sock,filename);
-
     printf("ftp to %s ..." , server_ip);
     do
     {
