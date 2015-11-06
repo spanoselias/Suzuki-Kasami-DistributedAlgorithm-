@@ -202,7 +202,7 @@ int main(int argc , char  *argv[])
         perror("Listen() failed"); exit(1);
     }
 
-    printf("\nStarting server...\n");
+    printf("\nStarting server....\n");
     printf("Listening for connections to port %d\n" , port);
     while(true)
     {
