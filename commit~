@@ -4,7 +4,6 @@
 
 while :
 do
-	
 	git add --all
 	git commit -m "implementing ftp"
 	git push		

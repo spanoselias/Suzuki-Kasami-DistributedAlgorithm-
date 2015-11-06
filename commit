@@ -7,6 +7,6 @@ do
 	git add --all
 	git commit -m "implementing ftp"
 	git push		
-	sleep 10
+	sleep 60
 	echo "Press [CTRL+C] to stop.."
 done
