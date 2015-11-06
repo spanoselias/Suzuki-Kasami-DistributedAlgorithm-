@@ -191,6 +191,8 @@ int main(int argc , char  *argv[])
     printf("ftp to %s ..." , server_ip);
     do
     {
+        printf("\nFtp>");
+
         fgets(cmdbuf,sizeof(cmdbuf), stdin);
         read_cmd(cmdbuf,ftp_header);
 
