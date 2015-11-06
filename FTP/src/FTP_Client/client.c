@@ -130,6 +130,7 @@ int main(int argc , char  *argv[])
     int      sock; //Store Socket descriptor
 
     //Input parameters variables
+    /*The port that ftp server listen*/
     int      port;
     char     *server_ip;
     char     *filename;
