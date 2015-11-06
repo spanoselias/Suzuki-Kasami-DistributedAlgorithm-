@@ -47,10 +47,9 @@
       <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6302953">
-              <caret line="231" column="35" selection-start-line="231" selection-start-column="32" selection-end-line="231" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.4390244">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="13" />
               <folding>
-                <element signature="e#1202#2621#0" expanded="false" />
                 <element signature="e#2623#3971#0" expanded="false" />
               </folding>
             </state>
@@ -331,10 +330,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6302953">
-          <caret line="231" column="35" selection-start-line="231" selection-start-column="32" selection-end-line="231" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.4390244">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="13" />
           <folding>
-            <element signature="e#1202#2621#0" expanded="false" />
             <element signature="e#2623#3971#0" expanded="false" />
           </folding>
         </state>
