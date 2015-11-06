@@ -75,9 +75,7 @@ int ftp_send(char *filename , int newsock)
     while (((sent_bytes = sendfile(newsock, fd, &offset, BUFSIZE)) > 0) && (remain_data > 0))
     {
         remain_data -= sent_bytes;
-        fprintf(stdout, "2. Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
-
-        printf("Send_bytes: %d , remain_data: %d \n" , sent_bytes ,remain_data);
+        fprintf(stdout, "Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
 
     }
     printf("Finish sending\n");
