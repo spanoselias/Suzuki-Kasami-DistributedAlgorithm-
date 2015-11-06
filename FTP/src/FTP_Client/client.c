@@ -95,7 +95,7 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
 
     /* get the first token */
     cmd = strtok(cmd_str, " ");
-    ftp_header.cmd=cmd;
+    strcpy(ftp_header.cmd,cmd);
 
     if(strcmp(cmd , "get" ) == 0)
     {
