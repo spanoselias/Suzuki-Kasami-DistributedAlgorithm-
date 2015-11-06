@@ -134,6 +134,7 @@ int main(int argc , char  *argv[])
     int      port;
     /*The ftp server ip*/
     char     *server_ip;
+    /*File name*/
     char     *filename;
     int       bytes;
     /*Store command from ftp client*/
