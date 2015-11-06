@@ -116,7 +116,6 @@ int establish_conn(char *server_ip , int port)
     return sock;
 }
 
-
 int main(int argc , char  *argv[])
 {
 
