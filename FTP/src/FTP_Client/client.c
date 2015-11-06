@@ -161,6 +161,9 @@ int main(int argc , char  *argv[])
     /*Store command from ftp client*/
     char      cmdbuf[1024];
 
+    /*Store information for ftp header*/
+    struct FTP_HEADER ftp_header;
+
     //Check of input arguments
     if(argc!=4)
     {
@@ -187,6 +190,8 @@ int main(int argc , char  *argv[])
     do
     {
         fgets(cmdbuf,sizeof(cmdbuf), stdin);
+        read_cmd(cmdbuf,ftp_header);
+                
 
         if(strcmp(cmdbuf,"get_file")==0)
         {
