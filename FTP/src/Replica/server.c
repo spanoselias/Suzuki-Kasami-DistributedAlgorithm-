@@ -213,7 +213,6 @@ int main(int argc , char  *argv[])
         if((newsock=accept(servSock , clientPtr , &clientlen)) < 0){
             perror("accept() failed"); exit(1);}
 
-
         printf("Accepted connection from IP:%s \n" , inet_ntoa(client_addr.sin_addr));
         printf("*****************************\n");
         switch (fork())
@@ -241,7 +240,6 @@ int main(int argc , char  *argv[])
                 {
                     printf("Error ftp_send()");
                 }
-
         }//Switch
 
     }//While(1)
