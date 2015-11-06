@@ -41,7 +41,6 @@ int ftp_send(char *filename , int newsock)
     if (fd == -1)
     {
         fprintf(stderr, "Error opening file --> %s", strerror(errno));
-
         exit(EXIT_FAILURE);
     }
 
