@@ -79,7 +79,7 @@ int ftp_send(char *filename , int newsock)
     }
     printf("Finish sending\n");
     close(newsock);
-    close(fp;
+    close(fp);
 
     return true;
 
