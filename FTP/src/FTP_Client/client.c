@@ -174,7 +174,6 @@ int main(int argc , char  *argv[])
 
     //Retrieve input parameters
     server_ip=(char*)malloc(sizeof(char) * strlen(argv[1]));
-    filename=(char*)malloc(sizeof(char) * strlen(argv[3]));
     strcpy(server_ip,argv[1]);
     port=atoi(argv[2]);
 
