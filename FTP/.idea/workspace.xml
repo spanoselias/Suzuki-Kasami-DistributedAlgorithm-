@@ -12,7 +12,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="" />
+    <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Replica/sample.txt" afterPath="" />
+    </list>
     <ignored path="FTP.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
