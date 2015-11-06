@@ -12,9 +12,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/src/FTP_Client/client.c" />
-    </list>
+    <list default="true" id="30efbfce-703a-4f7b-9439-fd147168c7e8" name="Default" comment="" />
     <ignored path="FTP.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +57,8 @@
       <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5030675">
-              <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.3026585">
+              <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
               <folding>
                 <element signature="e#1250#2599#0" expanded="false" />
                 <element signature="e#2885#3721#0" expanded="false" />
@@ -312,8 +310,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5030675">
-          <caret line="101" column="54" selection-start-line="101" selection-start-column="54" selection-end-line="101" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.3026585">
+          <caret line="93" column="14" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
           <folding>
             <element signature="e#1250#2599#0" expanded="false" />
             <element signature="e#2885#3721#0" expanded="false" />
