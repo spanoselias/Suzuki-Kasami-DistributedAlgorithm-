@@ -168,7 +168,7 @@ int main(int argc , char  *argv[])
     //Check of input arguments
     if(argc!=3)
     {
-        printf("\nUsage: argv[0] [SERVER_IP] [PORT] [filename]\n");
+        printf("\nUsage: argv[0] [SERVER_IP] [PORT]\n");
         exit(-1);
     }
 
