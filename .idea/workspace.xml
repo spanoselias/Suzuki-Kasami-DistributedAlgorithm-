@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7980df8-ef1f-480a-b0ef-d7ee6e1ba085" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/cli" afterPath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/cli" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/ser" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/ser" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DistributedAlgorithms.iws" />
@@ -35,25 +32,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <file leaf-file-name="client.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="230" column="45" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
+              <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
               <folding>
-                <element signature="e#2662#4010#0" expanded="false" />
+                <element signature="e#2616#2967#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
+      <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7081081">
-              <caret line="193" column="44" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
+            <state vertical-scroll-proportion="1.0583783">
+              <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
               <folding>
-                <element signature="e#2616#2967#0" expanded="false" />
+                <element signature="e#2662#4010#0" expanded="false" />
+                <element signature="e#4013#6821#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,9 +79,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="978" />
+    <option name="x" value="65" />
     <option name="y" value="52" />
-    <option name="width" value="932" />
+    <option name="width" value="735" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -210,7 +208,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="978" y="52" width="932" height="1028" extended-state="4" />
+    <frame x="65" y="52" width="735" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23523422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -246,26 +244,28 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#2662#4010#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="230" column="45" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
-          <folding>
-            <element signature="e#2662#4010#0" expanded="false" />
+            <element signature="e#4013#6821#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7081081">
-          <caret line="193" column="44" selection-start-line="193" selection-start-column="44" selection-end-line="193" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="186" column="40" selection-start-line="186" selection-start-column="40" selection-end-line="186" selection-end-column="40" />
           <folding>
             <element signature="e#2616#2967#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0583783">
+          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding>
+            <element signature="e#2662#4010#0" expanded="false" />
+            <element signature="e#4013#6821#0" expanded="false" />
           </folding>
         </state>
       </provider>

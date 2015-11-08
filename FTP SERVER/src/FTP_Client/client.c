@@ -191,7 +191,7 @@ int main(int argc , char  *argv[])
 
         read(STDIN_FILENO,cmdbuf,sizeof(cmdbuf));
         read_cmd(cmdbuf,ftp_header);
-        printf("\n%s-" , ftp_header.filename);
+       // printf("\n%s-" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
         {
             get_file(buffer,sock,ftp_header.filename);
