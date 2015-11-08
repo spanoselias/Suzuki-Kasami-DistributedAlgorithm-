@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7980df8-ef1f-480a-b0ef-d7ee6e1ba085" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/FTP/src/FTP_Client/client.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP/.idea/workspace.xml" afterPath="$PROJECT_DIR$/FTP/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
     </list>
     <ignored path="DistributedAlgorithms.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,16 +31,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FTP/src/FTP_Client/client.c">
+      <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11891892">
-              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-              <folding>
-                <element signature="e#1098#1154#1" expanded="false" />
-                <element signature="e#1250#2599#0" expanded="false" />
-                <element signature="e#2601#2890#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.28">
+              <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,6 +50,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/FTP/src/FTP_Client/client.c" />
+        <option value="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
       </list>
     </option>
   </component>
@@ -66,9 +62,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="938" />
+    <option name="x" value="998" />
     <option name="y" value="24" />
-    <option name="width" value="982" />
+    <option name="width" value="922" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -122,7 +118,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FTP" />
+              <option name="myItemId" value="FTP SERVER" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -136,11 +132,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FTP" />
+              <option name="myItemId" value="FTP SERVER" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Replica" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -154,15 +154,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FTP" />
+              <option name="myItemId" value="FTP SERVER" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FTP_Client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -184,10 +180,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="938" y="24" width="982" height="1056" extended-state="4" />
+    <frame x="998" y="24" width="922" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.048879836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23523422" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31937173" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -214,15 +210,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FTP/src/FTP_Client/client.c">
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11891892">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="e#1098#1154#1" expanded="false" />
-            <element signature="e#1250#2599#0" expanded="false" />
-            <element signature="e#2601#2890#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.28">
+          <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
