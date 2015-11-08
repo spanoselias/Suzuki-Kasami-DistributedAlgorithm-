@@ -105,7 +105,6 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
     return 1;
 }
 
-
 int establish_conn(char *server_ip , int port)
 {
     int sock;
