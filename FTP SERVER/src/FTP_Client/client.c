@@ -38,9 +38,9 @@ struct hostent *rem;
 int get_file(char *buffer , int sock, char *filename )
 {
     FILE     *received_file;
-    int remain_data;
-    int bytes;
-    int file_size;
+    int      remain_data;
+    int      bytes;
+    int      file_size;
 
     strcpy(buffer,filename);
     printf("Filename: %s\n",buffer);
@@ -99,7 +99,8 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
 
     if(strcmp(cmd , "get" ) == 0)
     {
-        strcpy(ftp_header.filename ,strtok(NULL," "));
+        sprintf(ftp_header.filename,"%s",strtok(NULL," "));
+        //strcpy(ftp_header.filename ,strtok(NULL," "));
     }
 
     return 1;
@@ -188,9 +189,9 @@ int main(int argc , char  *argv[])
     {
         printf("\nFtp>");
 
-        fgets(cmdbuf,sizeof(cmdbuf), stdin);
+        read(STDIN_FILENO,cmdbuf,sizeof(cmdbuf));
         read_cmd(cmdbuf,ftp_header);
-
+        printf("\n%s-" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
         {
             get_file(buffer,sock,ftp_header.filename);
