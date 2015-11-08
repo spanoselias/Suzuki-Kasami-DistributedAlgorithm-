@@ -10,6 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7980df8-ef1f-480a-b0ef-d7ee6e1ba085" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/a.out" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/a.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/ser" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/ser" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
     </list>
     <ignored path="DistributedAlgorithms.iws" />
@@ -34,9 +36,11 @@
       <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28">
-              <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.557047">
+              <caret line="160" column="31" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
+              <folding>
+                <element signature="e#2662#4010#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,6 +173,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -212,9 +221,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28">
-          <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.557047">
+          <caret line="160" column="31" selection-start-line="160" selection-start-column="31" selection-end-line="160" selection-end-column="31" />
+          <folding>
+            <element signature="e#2662#4010#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
