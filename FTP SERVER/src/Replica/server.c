@@ -228,9 +228,10 @@ int main(int argc , char  *argv[])
                     exit(newsock);
                 }
 
-                printf("Received filename:%s-\n" , buf);
+
                 filename=(char*)malloc((sizeof(char) * strlen(buf)));
-                sprintf(filename,"%s" , "sample2.txt");
+                strcpy(filename,buf);
+                printf("\nReceived filename:%s-" , buf);
 
                 if(ftp_send(filename,newsock)==false)
                 {

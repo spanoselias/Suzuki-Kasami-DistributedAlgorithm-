@@ -42,10 +42,12 @@ int get_file(char *buffer , int sock, char *filename )
     int      bytes;
     int      file_size;
 
-    strcpy(buffer,filename);
-    printf("Filename: %s\n",buffer);
 
-    if ((bytes=send(sock, buffer, (strlen(filename)+1), 0)) < 0)
+    char *simple="31.mp3";
+    sprintf(buffer,"%s",simple);
+    printf("Filename in get_file: %s\n",buffer);
+
+    if ((bytes=send(sock, buffer, (strlen(filename)), 0)) < 0)
     {
         perror("send() failed\n");
         close(sock);
@@ -189,9 +191,11 @@ int main(int argc , char  *argv[])
     {
         printf("\nFtp>");
 
-        read(STDIN_FILENO,cmdbuf,sizeof(cmdbuf));
+        fgets(cmdbuf,sizeof(cmdbuf),stdin);
         read_cmd(cmdbuf,ftp_header);
-       // printf("\n%s-" , ftp_header.filename);
+
+        sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
+        printf("\n%s" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
         {
             get_file(buffer,sock,ftp_header.filename);
