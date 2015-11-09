@@ -195,11 +195,9 @@ int main(int argc , char  *argv[])
 
         fgets(cmdbuf,sizeof(cmdbuf),stdin);
 
-
-
         read_cmd(cmdbuf,ftp_header);
 
-      //  sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
+      // sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
         printf("\n%s" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
         {
