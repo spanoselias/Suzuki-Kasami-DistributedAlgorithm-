@@ -43,11 +43,11 @@ int get_file(char *buffer , int sock, char *filename )
     int      file_size;
 
 
-    char *simple="31.mp3";
-    sprintf(buffer,"%s",simple);
-    printf("Filename in get_file: %s\n",buffer);
-
-    if ((bytes=send(sock, buffer, (strlen(filename)), 0)) < 0)
+    //char *simple="31.mp3";
+    //sprintf(buffer,"%s",simple);
+    printf("Filename in get_file: %s\n",filename);
+    sprintf(buffer , "%s" , filename);
+    if ((bytes=send(sock, buffer, sizeof(buffer), 0)) < 0)
     {
         perror("send() failed\n");
         close(sock);
@@ -63,7 +63,7 @@ int get_file(char *buffer , int sock, char *filename )
 
     printf("Received: %d\n" , file_size);
 
-    sprintf(filename , "%s_%d" , filename , (rand() % 1000));
+   //sprintf(filename , "%s_%d" , filename , (rand() % 1000));
     received_file = fopen(filename, "w");
     if (received_file == NULL)
     {
@@ -84,7 +84,7 @@ int get_file(char *buffer , int sock, char *filename )
         {
             break;
         }
-    }
+    }//While
 
     fclose(received_file);
     close(sock);
@@ -102,6 +102,7 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
     if(strcmp(cmd , "get" ) == 0)
     {
         sprintf(ftp_header.filename,"%s",strtok(NULL," "));
+        ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
         //strcpy(ftp_header.filename ,strtok(NULL," "));
     }
 
@@ -186,15 +187,16 @@ int main(int argc , char  *argv[])
     bzero(buffer, sizeof(BUFSIZE));
     /* Receiving file size */
 
-    printf("ftp to %s ..." , server_ip);
+    printf("Ftp to %s ..." , server_ip);
     do
     {
         printf("\nFtp>");
 
         fgets(cmdbuf,sizeof(cmdbuf),stdin);
+
         read_cmd(cmdbuf,ftp_header);
 
-        sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
+      //  sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
         printf("\n%s" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
         {
