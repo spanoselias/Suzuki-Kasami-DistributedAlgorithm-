@@ -140,7 +140,6 @@ int ftp_recv(char *buffer , int sock, char *filename )
 }
 
 
-
 int main(int argc , char  *argv[])
 {
 
@@ -228,10 +227,10 @@ int main(int argc , char  *argv[])
                     perror("Received");
                     exit(newsock);
                 }
-                printf("Received: %s-",buf);
 
                 filename=(char*)malloc((sizeof(char) * strlen(buf)));
-                strcpy(filename,buf);
+                sprintf(filename ,"%s" , buf);
+                //strcpy(filename,buf);
                 printf("\nReceived filename:%s-" , buf);
 
                 if(ftp_send(filename,newsock)==false)
