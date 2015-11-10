@@ -26,7 +26,14 @@
 
 #define DEBUG
 
-int ftp_send(char *filename , int newsock)
+struct FTP_HEADER
+{
+    char *cmd;
+    char *filename;
+    int filesize;
+};
+
+int send2ftp(char *filename, int newsock)
 {
     int         fd;
     off_t       offset = 0;
@@ -35,7 +42,6 @@ int ftp_send(char *filename , int newsock)
     struct      stat file_stat; /*to retrieve information for the file*/
     int         len;
     int         file_size;
-
 
     printf("FileNAmeIn:%s" , filename);
 
@@ -58,7 +64,6 @@ int ftp_send(char *filename , int newsock)
     /* Sending file size */
     file_size=file_stat.st_size;
     printf("File Size: \n %d bytes\n",file_size);
-
 
     /* If connection is established then start communicating */
     len = send(newsock, &file_size, sizeof(file_size), 0);
@@ -86,43 +91,26 @@ int ftp_send(char *filename , int newsock)
 
 }
 
-int ftp_recv(char *buffer , int sock, char *filename )
+int ftp_recv(char *buffer , int sock, char *filename , int fileSize )
 {
     FILE     *received_file;
-    int remain_data;
-    int bytes;
-    int file_size;
+    int      remain_data;
+    int      bytes;
+    int      file_size;
 
-    strcpy(buffer,filename);
-    printf("Filename: %s\n",buffer);
+    printf("Received: %d\n" , fileSize);
 
-    if ((bytes=send(sock, buffer, (strlen(filename)+1), 0)) < 0)
-    {
-        perror("send() failed\n");
-        close(sock);
-        exit(EXIT_FAILURE);
-    }
-    printf("Bytes sends: %d\n" ,bytes );
-
-    if(recv(sock, &file_size, sizeof(file_size), 0) < 0)
-    {
-        perror("Received");
-        exit(sock);
-    }
-
-    printf("Received: %d\n" , file_size);
-
-    sprintf(filename , "%s_%d" , filename , (rand() % 1000));
+    //sprintf(filename , "%s_%d" , filename , (rand() % 1000));
     received_file = fopen(filename, "w");
     if (received_file == NULL)
     {
         fprintf(stderr, "Failed to open file foo --> %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }
-    remain_data = file_size;
+    remain_data = fileSize;
 
-    bzero(buffer, sizeof(BUFSIZE));
-    while (((bytes = recv(sock, buffer, BUFSIZE, 0)) > 0) && (remain_data > 0))
+    bzero(buffer, sizeof(buffer));
+    while (((bytes = recv(sock, buffer, sizeof(buffer), 0)) > 0) && (remain_data > 0))
     {
         fwrite(buffer, sizeof(char), bytes, received_file);
         remain_data -= bytes;
@@ -133,12 +121,35 @@ int ftp_recv(char *buffer , int sock, char *filename )
         {
             break;
         }
-    }
+    }//While
 
     fclose(received_file);
     close(sock);
 }
 
+int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
+{
+    char *cmd;
+
+    /* get the first token */
+    cmd = strtok(cmd_str, " ");
+    strcpy(ftp_header.cmd,cmd);
+
+    if(strcmp(cmd , "get" ) == 0)
+    {
+        sprintf(ftp_header.filename,"%s",strtok(NULL," "));
+        //ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
+        //strcpy(ftp_header.filename ,strtok(NULL," "));
+    }
+
+    else if(strcmp(cmd , "put" )==0)
+    {
+        sprintf(ftp_header.filename,"%s",strtok(NULL," "));
+        sprintf(ftp_header.filesize,"%d",atoi(strtok(NULL," ")));
+    }
+
+    return 1;
+}
 
 int main(int argc , char  *argv[])
 {
@@ -160,6 +171,10 @@ int main(int argc , char  *argv[])
     int         file_size;
     char        *filename=NULL;
 
+    /*Store information for ftp header*/
+    struct FTP_HEADER ftp_header;
+    ftp_header.cmd=(char *)malloc(sizeof(char) * 20);
+    ftp_header.filename=(char *)malloc(sizeof(char) * 255);
 
     //Check of input arguments
     if(argc !=2)
@@ -177,7 +192,6 @@ int main(int argc , char  *argv[])
     serv_addr.sin_port=htons(port);
 
     servPtr=(struct sockaddr *) &serv_addr;
-
 
     /*Create a socket and check if is created correct.*/
     if((servSock=socket(AF_INET,SOCK_STREAM,0)) < 0)
@@ -228,15 +242,21 @@ int main(int argc , char  *argv[])
                     exit(newsock);
                 }
 
-                filename=(char*)malloc((sizeof(char) * strlen(buf)));
+                filename=(char*)malloc((sizeof(char) * sizeof(buf)));
                 sprintf(filename ,"%s" , buf);
+                read_cmd(buf,ftp_header);
                 //strcpy(filename,buf);
                 printf("\nReceived filename:%s\n" , buf);
 
-                if(ftp_send(filename,newsock)==false)
+            if(strcmp(ftp_header.cmd , "get")==0)
+            {
+                if (ftp_recv(buf,newsock,ftp_header.filename,ftp_header.filesize) == false)
                 {
                     printf("Error ftp_send()");
                 }
+            }
+
+
         }//Switch
     }//While(1)
 

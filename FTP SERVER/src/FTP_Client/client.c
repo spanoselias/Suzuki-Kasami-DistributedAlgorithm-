@@ -19,7 +19,7 @@
 #include <errno.h>
 #include <time.h>
 
-#define BUFSIZE 4096
+#define MAXBUF 4096
 
 #define  DEBUG 
 
@@ -41,14 +41,15 @@ int get_file(char *buffer , int sock, char *filename )
     int      remain_data;
     int      bytes;
     int      file_size;
-
+    //char     sendPacket[1024];
 
     //char *simple="31.mp3";
     //sprintf(buffer,"%s",simple);
 
-    sprintf(buffer , "%s" , filename);
-    printf("Filename in get_file: %s , length: %d\n",buffer, strlen(filename));
-    if ((bytes=send(sock, buffer,strlen(filename), 0)) < 0)
+    sprintf(buffer , "get %s" , filename);
+    file_size=strlen(filename) + 4;
+    printf("Filename in get_file: %s , length: %d\n",buffer, file_size);
+    if ((bytes=send(sock, buffer, file_size , 0)) < 0)
     {
         perror("send() failed\n");
         close(sock);
@@ -73,8 +74,8 @@ int get_file(char *buffer , int sock, char *filename )
     }
     remain_data = file_size;
 
-    bzero(buffer, sizeof(BUFSIZE));
-    while (((bytes = recv(sock, buffer, BUFSIZE, 0)) > 0) && (remain_data > 0))
+    bzero(buffer, sizeof(buffer));
+    while (((bytes = recv(sock, buffer, sizeof(buffer), 0)) > 0) && (remain_data > 0))
     {
         fwrite(buffer, sizeof(char), bytes, received_file);
         remain_data -= bytes;
@@ -89,7 +90,69 @@ int get_file(char *buffer , int sock, char *filename )
 
     fclose(received_file);
     close(sock);
+}
 
+int send2ftp(char *filename, int newsock , char *buffer)
+{
+    int         fd;
+    off_t       offset = 0;
+    int         remain_data;
+    int         sent_bytes;
+    struct      stat file_stat; /*to retrieve information for the file*/
+    int         len;
+    int         file_size;
+    int         send_size;
+
+    printf("FileNAmeIn:%s" , filename);
+
+    fd = open(filename,  O_RDONLY);
+    if (fd < 0 )
+    {
+        fprintf(stderr, "Error opening file --> %s", strerror(errno));
+        exit(EXIT_FAILURE);
+    }
+
+    /* Get file stats */
+    if (fstat(fd, &file_stat) < 0)
+    {
+        printf("Error fstat");
+        close(newsock);
+        close(fd);
+        exit(1);
+    }
+
+    /* Sending file size */
+    file_size=file_stat.st_size;
+    printf("File Size: \n %d bytes\n",file_size);
+
+    bzero(buffer,sizeof(buffer));
+    sprintf(buffer,"put %s %d" , filename , file_size);
+
+    /*Calculate the send bytes*/
+    send_size= 4 + strlen(filename) + file_size;
+    /* If connection is established then start communicating */
+    len = send(newsock, &file_size, send_size , 0);
+    if (len < 0)
+    {
+        perror("send");
+        exit(EXIT_FAILURE);
+    }
+    sleep(1);
+    printf("Server sent %d bytes for the size\n" , len);
+
+    remain_data = file_stat.st_size;
+    /* Sending file data */
+    while (((sent_bytes = sendfile(newsock, fd, &offset, BUFSIZE)) > 0) && (remain_data > 0))
+    {
+        remain_data -= sent_bytes;
+        fprintf(stdout, "Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
+
+    }
+    printf("Finish sending\n");
+    close(newsock);
+    close(fd);
+
+    return true;
 }
 
 int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
@@ -149,7 +212,7 @@ int main(int argc , char  *argv[])
 /***********************************************************************************/
 /*                                   LOCAL VARIABLES                               */
 /***********************************************************************************/
-    char     buffer[BUFSIZE];/*Buffer to send*receive data*/
+    char     buffer[MAXBUF];/*Buffer to send*receive data*/
     int      file_size;
     int      remain_data = 0;
     int      len;
@@ -163,7 +226,7 @@ int main(int argc , char  *argv[])
 
     int       bytes;
     /*Store command from ftp client*/
-    char      cmdbuf[1024];
+    char      cmdbuf[MAXBUF];
 
     /*Store information for ftp header*/
     struct FTP_HEADER ftp_header;
@@ -177,7 +240,7 @@ int main(int argc , char  *argv[])
         exit(-1);
     }
 
-    //Retrieve input parameters
+    /*Retrieve input parameters*/
     server_ip=(char*)malloc(sizeof(char) * strlen(argv[1]));
     strcpy(server_ip,argv[1]);
     port=atoi(argv[2]);
@@ -185,23 +248,32 @@ int main(int argc , char  *argv[])
     /*Establish connection with ftp server*/
     sock=establish_conn(server_ip,port);
 
-    bzero(buffer, sizeof(BUFSIZE));
+    /*Initialize buffer */
+    bzero(buffer, sizeof(buffer));
     /* Receiving file size */
 
     printf("Ftp to %s ..." , server_ip);
     do
     {
+        /*Command prompt for ftp server*/
         printf("\nFtp>");
 
+        /*Read from stdin*/
         fgets(cmdbuf,sizeof(cmdbuf),stdin);
 
+        /*Encode the command the you read in a struct*/
         read_cmd(cmdbuf,ftp_header);
 
-      // sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
+      //sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
+        /*For Debug purposes*/
         printf("\n%s" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
         {
             get_file(buffer,sock,ftp_header.filename);
+        }
+        else if(strcmp(ftp_header.cmd , "put")==0)
+        {
+           send2ftp(ftp_header.filename,sock);
         }
 
     }while(strcmp(cmdbuf,"exit") !=0);
