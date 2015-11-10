@@ -12,13 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7980df8-ef1f-480a-b0ef-d7ee6e1ba085" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/sample2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/a.out" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/cli" afterPath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/cli" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/ser" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DistributedAlgorithms.iml" afterPath="$PROJECT_DIR$/.idea/DistributedAlgorithms.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" afterPath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/sample2.txt" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/sample2.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" afterPath="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -46,15 +43,14 @@
           <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="2.2190595">
-                  <caret line="275" column="20" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.4009901">
+                  <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
                   <folding>
                     <element signature="e#852#870#0" expanded="true" />
-                    <element signature="e#1097#1153#1" expanded="false" />
-                    <element signature="e#1249#2799#0" expanded="false" />
-                    <element signature="e#2801#4476#0" expanded="false" />
-                    <element signature="e#4478#4894#0" expanded="false" />
-                    <element signature="e#4896#5732#0" expanded="false" />
+                    <element signature="e#1159#1215#1" expanded="false" />
+                    <element signature="e#2863#4537#0" expanded="false" />
+                    <element signature="e#4539#4955#0" expanded="false" />
+                    <element signature="e#4957#5793#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -67,13 +63,13 @@
           <file leaf-file-name="server.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.28836635">
-                  <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.51237625">
+                  <caret line="23" column="20" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
                   <folding>
                     <element signature="e#852#870#0" expanded="true" />
                     <element signature="e#1202#1276#1" expanded="false" />
-                    <element signature="e#1279#2734#0" expanded="false" />
-                    <element signature="e#3741#4335#0" expanded="false" />
+                    <element signature="e#2737#3740#0" expanded="false" />
+                    <element signature="e#3742#4336#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -93,8 +89,8 @@
         <option value="$PROJECT_DIR$/FTP SERVER/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/FTP SERVER/src/Replica/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" />
         <option value="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
+        <option value="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" />
       </list>
     </option>
   </component>
@@ -310,11 +306,10 @@
           <caret line="199" column="9" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
           <folding>
             <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1097#1153#1" expanded="false" />
-            <element signature="e#1249#2799#0" expanded="false" />
-            <element signature="e#2801#4476#0" expanded="false" />
-            <element signature="e#4478#4894#0" expanded="false" />
-            <element signature="e#4896#5732#0" expanded="false" />
+            <element signature="e#1159#1215#1" expanded="false" />
+            <element signature="e#2863#4537#0" expanded="false" />
+            <element signature="e#4539#4955#0" expanded="false" />
+            <element signature="e#4957#5793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -326,8 +321,8 @@
           <folding>
             <element signature="e#852#870#0" expanded="true" />
             <element signature="e#1202#1276#1" expanded="false" />
-            <element signature="e#1279#2734#0" expanded="false" />
-            <element signature="e#3741#4335#0" expanded="false" />
+            <element signature="e#2737#3740#0" expanded="false" />
+            <element signature="e#3742#4336#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -338,11 +333,10 @@
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1097#1153#1" expanded="false" />
-            <element signature="e#1249#2799#0" expanded="false" />
-            <element signature="e#2801#4476#0" expanded="false" />
-            <element signature="e#4478#4894#0" expanded="false" />
-            <element signature="e#4896#5732#0" expanded="false" />
+            <element signature="e#1159#1215#1" expanded="false" />
+            <element signature="e#2863#4537#0" expanded="false" />
+            <element signature="e#4539#4955#0" expanded="false" />
+            <element signature="e#4957#5793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -353,11 +347,10 @@
           <caret line="196" column="75" selection-start-line="196" selection-start-column="75" selection-end-line="196" selection-end-column="75" />
           <folding>
             <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1097#1153#1" expanded="false" />
-            <element signature="e#1249#2799#0" expanded="false" />
-            <element signature="e#2801#4476#0" expanded="false" />
-            <element signature="e#4478#4894#0" expanded="false" />
-            <element signature="e#4896#5732#0" expanded="false" />
+            <element signature="e#1159#1215#1" expanded="false" />
+            <element signature="e#2863#4537#0" expanded="false" />
+            <element signature="e#4539#4955#0" expanded="false" />
+            <element signature="e#4957#5793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -369,8 +362,8 @@
           <folding>
             <element signature="e#852#870#0" expanded="true" />
             <element signature="e#1202#1276#1" expanded="false" />
-            <element signature="e#1279#2734#0" expanded="false" />
-            <element signature="e#3741#4335#0" expanded="false" />
+            <element signature="e#2737#3740#0" expanded="false" />
+            <element signature="e#3742#4336#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -382,8 +375,8 @@
           <folding>
             <element signature="e#852#870#0" expanded="true" />
             <element signature="e#1202#1276#1" expanded="false" />
-            <element signature="e#1279#2734#0" expanded="false" />
-            <element signature="e#3741#4335#0" expanded="false" />
+            <element signature="e#2737#3740#0" expanded="false" />
+            <element signature="e#3742#4336#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -398,28 +391,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28836635">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.51237625">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="e#852#870#0" expanded="true" />
             <element signature="e#1202#1276#1" expanded="false" />
-            <element signature="e#1279#2734#0" expanded="false" />
-            <element signature="e#3741#4335#0" expanded="false" />
+            <element signature="e#2737#3740#0" expanded="false" />
+            <element signature="e#3742#4336#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2190595">
-          <caret line="275" column="20" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.4009901">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1097#1153#1" expanded="false" />
-            <element signature="e#1249#2799#0" expanded="false" />
-            <element signature="e#2801#4476#0" expanded="false" />
-            <element signature="e#4478#4894#0" expanded="false" />
-            <element signature="e#4896#5732#0" expanded="false" />
+            <element signature="e#1159#1215#1" expanded="false" />
+            <element signature="e#2863#4537#0" expanded="false" />
+            <element signature="e#4539#4955#0" expanded="false" />
+            <element signature="e#4957#5793#0" expanded="false" />
           </folding>
         </state>
       </provider>

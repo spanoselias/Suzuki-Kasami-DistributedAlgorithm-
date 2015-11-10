@@ -18,6 +18,9 @@
 #include <netdb.h>
 #include <errno.h>
 #include <time.h>
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 #define MAXBUF 4096
 
@@ -142,7 +145,7 @@ int send2ftp(char *filename, int newsock , char *buffer)
 
     remain_data = file_stat.st_size;
     /* Sending file data */
-    while (((sent_bytes = sendfile(newsock, fd, &offset, BUFSIZE)) > 0) && (remain_data > 0))
+    while (((sent_bytes = sendfile(newsock, fd, &offset, MAXBUF)) > 0) && (remain_data > 0))
     {
         remain_data -= sent_bytes;
         fprintf(stdout, "Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
@@ -273,7 +276,7 @@ int main(int argc , char  *argv[])
         }
         else if(strcmp(ftp_header.cmd , "put")==0)
         {
-           send2ftp(ftp_header.filename,sock);
+           send2ftp(ftp_header.filename,sock,buffer);
         }
 
     }while(strcmp(cmdbuf,"exit") !=0);

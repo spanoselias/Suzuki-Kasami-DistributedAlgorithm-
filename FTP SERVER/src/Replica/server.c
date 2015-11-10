@@ -44,7 +44,6 @@ int send2ftp(char *filename, int newsock)
     int         file_size;
 
     printf("FileNAmeIn:%s" , filename);
-
     fd = open(filename,  O_RDONLY);
     if (fd < 0 )
     {
@@ -63,7 +62,7 @@ int send2ftp(char *filename, int newsock)
 
     /* Sending file size */
     file_size=file_stat.st_size;
-    printf("File Size: \n %d bytes\n",file_size);
+    printf("\nFile Size: \n %d bytes\n",file_size);
 
     /* If connection is established then start communicating */
     len = send(newsock, &file_size, sizeof(file_size), 0);
@@ -242,13 +241,14 @@ int main(int argc , char  *argv[])
                     exit(newsock);
                 }
 
+                printf("\nReceived filename:%s\n" , buf);
                 filename=(char*)malloc((sizeof(char) * sizeof(buf)));
                 sprintf(filename ,"%s" , buf);
                 read_cmd(buf,ftp_header);
                 //strcpy(filename,buf);
-                printf("\nReceived filename:%s\n" , buf);
+                printf("Received name:%s \n" , ftp_header.filename);
 
-            if(strcmp(ftp_header.cmd , "get")==0)
+/*            if(strcmp(ftp_header.cmd , "put")==0)
             {
                 if (ftp_recv(buf,newsock,ftp_header.filename,ftp_header.filesize) == false)
                 {
@@ -256,6 +256,18 @@ int main(int argc , char  *argv[])
                 }
             }
 
+            else if(strcmp(ftp_header.cmd , "get")==0)
+                {
+                    if (send2ftp(ftp_header.filename,newsock))
+                    {
+                        printf("Error ftp_send()");
+                    }
+                }*/
+
+                if (send2ftp(ftp_header.filename,newsock))
+                {
+                    printf("Error ftp_send()");
+                }
 
         }//Switch
     }//While(1)
