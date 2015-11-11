@@ -21,7 +21,7 @@
 #include <fcntl.h>
 #include <stdbool.h>
 
-#define BUFSIZE 4096
+#define BUFSIZE 999999
 #define MAXCLIENT 100
 
 #define DEBUG
@@ -82,8 +82,13 @@ int send2ftp(char *filename, int newsock)
         remain_data -= sent_bytes;
         fprintf(stdout, "Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
 
+        if(remain_data ==0 )
+        {
+            break;
+        }
+
     }
-    printf("Finish sending\n");
+    printf("Receive completed!\n");
     close(newsock);
     close(fd);
 
@@ -113,8 +118,8 @@ int ftp_recv(char *buffer , int sock, char *filename , char *fileSize )
     }
     remain_data = atoi(fileSize);
 
-    bzero(buffer, sizeof(buffer));
-    while (((bytes = recv(sock, buffer, sizeof(buffer), 0)) > 0) && (remain_data > 0))
+    bzero(buffer, BUFSIZE);
+    while (((bytes = recv(sock, buffer, BUFSIZE, 0)) > 0) && (remain_data > 0))
     {
         fwrite(buffer, sizeof(char), bytes, received_file);
         remain_data -= bytes;

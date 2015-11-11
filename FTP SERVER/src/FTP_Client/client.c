@@ -22,7 +22,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define MAXBUF 4096
+#define MAXBUF 999999
 
 #define  DEBUG 
 
@@ -63,7 +63,6 @@ int get_file(char *buffer , int sock, char *filename )
 
     printf("Received: %d\n" , file_size);
 
-   //sprintf(filename , "%s_%d" , filename , (rand() % 1000));
     received_file = fopen(filename, "w");
     if (received_file == NULL)
     {
@@ -72,14 +71,14 @@ int get_file(char *buffer , int sock, char *filename )
     }
     remain_data = file_size;
 
-    bzero(buffer, sizeof(buffer));
-    while (((bytes = recv(sock, buffer, sizeof(buffer), 0)) > 0) && (remain_data > 0))
+    bzero(buffer, BUFSIZE);
+    while (((bytes = recv(sock, buffer, BUFSIZE, 0)) > 0) && (remain_data > 0))
     {
         fwrite(buffer, sizeof(char), bytes, received_file);
         remain_data -= bytes;
         fprintf(stdout, "Receive %d bytes and we hope :- %d bytes\n", bytes, remain_data);
 
-        printf("Received: %d , remain : %d\n",bytes , remain_data);
+      //  printf("Received: %d , remain : %d\n",bytes , remain_data);
         if(remain_data ==0 )
         {
             break;
