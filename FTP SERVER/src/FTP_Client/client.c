@@ -22,7 +22,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#define MAXBUF 999999
+#define MAXBUF 99999
 
 #define  DEBUG 
 
@@ -71,8 +71,8 @@ int get_file(char *buffer , int sock, char *filename )
     }
     remain_data = file_size;
 
-    bzero(buffer, BUFSIZE);
-    while (((bytes = recv(sock, buffer, BUFSIZE, 0)) > 0) && (remain_data > 0))
+    bzero(buffer, MAXBUF);
+    while (((bytes = recv(sock, buffer, MAXBUF, 0)) > 0) && (remain_data > 0))
     {
         fwrite(buffer, sizeof(char), bytes, received_file);
         remain_data -= bytes;
@@ -137,7 +137,7 @@ int send2ftp(char *filename, int newsock , char *buffer)
     printf("\nServer sent %d bytes for the size\n" , len);
 
     /*delete*/
-    sleep(3);
+    sleep(1);
 
     /*Calculate the total size of the file*/
     remain_data = file_stat.st_size;
