@@ -30,8 +30,9 @@ struct FTP_HEADER
 {
     char *cmd;
     char *filename;
-    int filesize;
+    char *filesize;
 };
+
 
 int send2ftp(char *filename, int newsock)
 {
@@ -51,7 +52,8 @@ int send2ftp(char *filename, int newsock)
         exit(EXIT_FAILURE);
     }
 
-    /* Get file stats */
+    /* Retrieve Information for
+     * the file*/
     if (fstat(fd, &file_stat) < 0)
     {
         printf("Error fstat");
@@ -59,7 +61,6 @@ int send2ftp(char *filename, int newsock)
         close(fd);
         exit(1);
     }
-
     /* Sending file size */
     file_size=file_stat.st_size;
     printf("\nFile Size: \n %d bytes\n",file_size);
@@ -90,7 +91,11 @@ int send2ftp(char *filename, int newsock)
 
 }
 
-int ftp_recv(char *buffer , int sock, char *filename , int fileSize )
+
+/***********************************************************************************/
+/*                  Function tha receive files from clients                        */
+/***********************************************************************************/
+int ftp_recv(char *buffer , int sock, char *filename , char *fileSize )
 {
     FILE     *received_file;
     int      remain_data;
@@ -106,7 +111,7 @@ int ftp_recv(char *buffer , int sock, char *filename , int fileSize )
         fprintf(stderr, "Failed to open file foo --> %s\n", strerror(errno));
         exit(EXIT_FAILURE);
     }
-    remain_data = fileSize;
+    remain_data = atoi(fileSize);
 
     bzero(buffer, sizeof(buffer));
     while (((bytes = recv(sock, buffer, sizeof(buffer), 0)) > 0) && (remain_data > 0))
@@ -144,11 +149,15 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
     else if(strcmp(cmd , "put" )==0)
     {
         sprintf(ftp_header.filename,"%s",strtok(NULL," "));
-        sprintf(ftp_header.filesize,"%d",atoi(strtok(NULL," ")));
+        sprintf( ftp_header.filesize,"%s",strtok(NULL," "));
     }
 
     return 1;
 }
+
+/***********************************************************************************/
+/*                             GLOBAL VARIABLES                                    */
+/***********************************************************************************/
 
 int main(int argc , char  *argv[])
 {
@@ -174,6 +183,7 @@ int main(int argc , char  *argv[])
     struct FTP_HEADER ftp_header;
     ftp_header.cmd=(char *)malloc(sizeof(char) * 20);
     ftp_header.filename=(char *)malloc(sizeof(char) * 255);
+    ftp_header.filesize=(char *)malloc((sizeof(int)));
 
     //Check of input arguments
     if(argc !=2)
@@ -219,8 +229,10 @@ int main(int argc , char  *argv[])
         clientPtr=(struct sockaddr *) &client_addr;
         clientlen= sizeof(client_addr);
 
-        if((newsock=accept(servSock , clientPtr , &clientlen)) < 0){
-            perror("accept() failed"); exit(1);}
+        if((newsock=accept(servSock , clientPtr , &clientlen)) < 0)
+            {
+                perror("accept() failed"); exit(1);
+            }
 
         printf("\nAccepted connection from IP:%s \n" , inet_ntoa(client_addr.sin_addr));
         printf("*****************************\n");
@@ -230,44 +242,41 @@ int main(int argc , char  *argv[])
                 perror("fork failed!"); exit(1);
 
             case 0:
-
                 //Initialize buffer
                 bzero(buf,sizeof(buf));
 
                 //Request filename
                 if(recv(newsock, buf, sizeof(buf), 0) < 0)
-                {
-                    perror("Received");
-                    exit(newsock);
-                }
+                    {
+                        perror("Received");
+                        exit(newsock);
+                    }
 
                 printf("\nReceived filename:%s\n" , buf);
-                filename=(char*)malloc((sizeof(char) * sizeof(buf)));
-                sprintf(filename ,"%s" , buf);
+
+                /*Read the header packet*/
                 read_cmd(buf,ftp_header);
                 //strcpy(filename,buf);
                 printf("Received name:%s \n" , ftp_header.filename);
+                printf("Received size: %s \n" , ftp_header.filesize);
 
-/*            if(strcmp(ftp_header.cmd , "put")==0)
-            {
-                if (ftp_recv(buf,newsock,ftp_header.filename,ftp_header.filesize) == false)
-                {
-                    printf("Error ftp_send()");
-                }
-            }
-
-            else if(strcmp(ftp_header.cmd , "get")==0)
-                {
-                    if (send2ftp(ftp_header.filename,newsock))
+                 if(strcmp(ftp_header.cmd , "put")==0)
                     {
-                        printf("Error ftp_send()");
-                    }
-                }*/
 
-                if (send2ftp(ftp_header.filename,newsock))
-                {
-                    printf("Error ftp_send()");
-                }
+                        if (ftp_recv(buf,newsock,ftp_header.filename,ftp_header.filesize) == false)
+                        {
+                            printf("Error ftp_send()");
+                        }
+                    }
+
+                else if(strcmp(ftp_header.cmd , "get")==0)
+                    {
+
+                        if (send2ftp(ftp_header.filename,newsock))
+                        {
+                            printf("Error ftp_send()");
+                        }
+                    }
 
         }//Switch
     }//While(1)

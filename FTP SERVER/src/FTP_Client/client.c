@@ -32,8 +32,7 @@ struct FTP_HEADER
     char *filename;
 };
 
-int serverlen;
-
+int      serverlen;
 struct sockaddr_in server;
 struct sockaddr *serverPtr;
 struct hostent *rem;
@@ -44,10 +43,6 @@ int get_file(char *buffer , int sock, char *filename )
     int      remain_data;
     int      bytes;
     int      file_size;
-    //char     sendPacket[1024];
-
-    //char *simple="31.mp3";
-    //sprintf(buffer,"%s",simple);
 
     sprintf(buffer , "get %s" , filename);
     file_size=strlen(filename) + 4;
@@ -126,23 +121,26 @@ int send2ftp(char *filename, int newsock , char *buffer)
 
     /* Sending file size */
     file_size=file_stat.st_size;
-    printf("File Size: \n %d bytes\n",file_size);
+    printf("File Size: %d bytes\n",file_size);
 
     bzero(buffer,sizeof(buffer));
     sprintf(buffer,"put %s %d" , filename , file_size);
 
     /*Calculate the send bytes*/
-    send_size= 4 + strlen(filename) + file_size;
+    send_size= 5 + strlen(filename) + file_size;
     /* If connection is established then start communicating */
-    len = send(newsock, &file_size, send_size , 0);
+    len = send(newsock, buffer, send_size , 0);
     if (len < 0)
     {
         perror("send");
         exit(EXIT_FAILURE);
     }
-    sleep(1);
-    printf("Server sent %d bytes for the size\n" , len);
+    printf("\nServer sent %d bytes for the size\n" , len);
 
+    /*delete*/
+    sleep(3);
+
+    /*Calculate the total size of the file*/
     remain_data = file_stat.st_size;
     /* Sending file data */
     while (((sent_bytes = sendfile(newsock, fd, &offset, MAXBUF)) > 0) && (remain_data > 0))
@@ -151,6 +149,7 @@ int send2ftp(char *filename, int newsock , char *buffer)
         fprintf(stdout, "Server sent %d bytes from file's data, offset is now : %d and remaining data = %d\n", sent_bytes, offset, remain_data);
 
     }
+
     printf("Finish sending\n");
     close(newsock);
     close(fd);
@@ -167,6 +166,12 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
     strcpy(ftp_header.cmd,cmd);
 
     if(strcmp(cmd , "get" ) == 0)
+    {
+        sprintf(ftp_header.filename,"%s",strtok(NULL," "));
+        ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
+        //strcpy(ftp_header.filename ,strtok(NULL," "));
+    }
+    if(strcmp(cmd , "put" ) == 0)
     {
         sprintf(ftp_header.filename,"%s",strtok(NULL," "));
         ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
@@ -221,6 +226,7 @@ int main(int argc , char  *argv[])
     int      len;
     int      sock; //Store Socket descriptor
 
+
     //Input parameters variables
     /*The port that ftp server listen*/
     int      port;
@@ -267,7 +273,6 @@ int main(int argc , char  *argv[])
         /*Encode the command the you read in a struct*/
         read_cmd(cmdbuf,ftp_header);
 
-      //sprintf(ftp_header.filename,"%s",strtok(ftp_header.filename,"\n"));
         /*For Debug purposes*/
         printf("\n%s" , ftp_header.filename);
         if(strcmp(ftp_header.cmd , "get")==0)
