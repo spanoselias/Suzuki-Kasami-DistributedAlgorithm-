@@ -24,8 +24,7 @@
 
 #include "sftp_cli.h"
 
-#define MAXBUF 99999
-
+#define MAXBUF 9999
 #define  DEBUG 
 
 int      serverlen;
@@ -163,13 +162,13 @@ int read_cmd(char *cmd_str , struct FTP_HEADER ftp_header)
     if(strcmp(cmd , "get" ) == 0)
     {
         sprintf(ftp_header.filename,"%s",strtok(NULL," "));
-        ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
+    //    ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
         //strcpy(ftp_header.filename ,strtok(NULL," "));
     }
     if(strcmp(cmd , "put" ) == 0)
     {
         sprintf(ftp_header.filename,"%s",strtok(NULL," "));
-        ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
+       // ftp_header.filename[strlen(ftp_header.filename)-1]='\0';
         //strcpy(ftp_header.filename ,strtok(NULL," "));
     }
 
@@ -186,7 +185,6 @@ int establish_conn(char *server_ip , int port)
         perror("Socket() failed");
         exit(1);
     }
-
     /*Internet domain*/
     server.sin_family=AF_INET;
     //Convert dotted-decimal address to 32-bit binary address
@@ -209,21 +207,10 @@ int establish_conn(char *server_ip , int port)
     return sock;
 }
 
-int startFTP()
+int sftp_start(char *sftp_ip , int sftp_port , char *cmd)
 {
     char     buffer[MAXBUF];/*Buffer to send*receive data*/
-    int      file_size;
-    int      remain_data = 0;
-    int      len;
     int      sock; //Store Socket descriptor
-
-
-    //Input parameters variables
-    /*The port that ftp server listen*/
-    int      port;
-    /*The ftp server ip*/
-    char     *server_ip;
-
     int       bytes;
     /*Store command from ftp client*/
     char      cmdbuf[MAXBUF];
@@ -233,54 +220,39 @@ int startFTP()
     ftp_header.cmd=(char *)malloc(sizeof(char) * 20);
     ftp_header.filename=(char *)malloc(sizeof(char) * 255);
 
-    //Check of input arguments
-    if(argc!=3)
-    {
-        printf("\nUsage: argv[0] [SERVER_IP] [PORT]\n");
-        exit(-1);
-    }
-
-    /*Retrieve input parameters*/
-    server_ip=(char*)malloc(sizeof(char) * strlen(argv[1]));
-    strcpy(server_ip,argv[1]);
-    port=atoi(argv[2]);
-
     /*Establish connection with ftp server*/
-    sock=establish_conn(server_ip,port);
+    sock=establish_conn(sftp_ip,sftp_port);
 
-    /*Initialize buffer */
-    bzero(buffer, sizeof(buffer));
+     /*Initialize buffer */
+     bzero(buffer,MAXBUF);
     /* Receiving file size */
 
-    printf("Ftp to %s ..." , server_ip);
-    do
-    {
-        /*Command prompt for ftp server*/
-        printf("\nFtp>");
+    /*Store the command request in buffer*/
+     strcpy(buffer,cmd);
 
-        /*Read from stdin*/
-        fgets(cmdbuf,sizeof(cmdbuf),stdin);
+    /*Encode the command the you read in a struct*/
+     read_cmd(buffer,ftp_header);
 
-        /*Encode the command the you read in a struct*/
-        read_cmd(cmdbuf,ftp_header);
-
-        /*For Debug purposes*/
-        printf("\n%s" , ftp_header.filename);
-        if(strcmp(ftp_header.cmd , "get")==0)
-        {
-            get_file(buffer,sock,ftp_header.filename);
-        }
-        else if(strcmp(ftp_header.cmd , "put")==0)
-        {
-            send2ftp(ftp_header.filename,sock,buffer);
-        }
-
-    }while(strcmp(cmdbuf,"exit") !=0);
+     /*For Debug purposes*/
+     printf("\n%s" , ftp_header.filename);
+     if(strcmp(ftp_header.cmd , "get")==0)
+     {
+         get_file(buffer,sock,ftp_header.filename);
+     }
+     else if(strcmp(ftp_header.cmd , "put")==0)
+     {
+        send2ftp(ftp_header.filename,sock,buffer);
+     }
 }
 
 int main(int argc , char *argv[])
 {
-    printf("Ftp client");
+    printf("Running ftp client...");
+    char *cmdReq="get sample2.txt";
+    char *sftp_ip="127.0.0.1";
+    int port= 10005;
+
+    sftp_start(sftp_ip,port,cmdReq);
 
    return 0;
 }

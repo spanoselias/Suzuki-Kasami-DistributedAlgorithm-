@@ -7,9 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/ABD/src/directory.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ABD/src/directory.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SFTP/src/sftp_cli/sftp_cli.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SFTP/src/sftp_cli/sftp_cli.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SFTP/src/sftp_rep/sftp_rep.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SFTP/sftp_cli/sftp_cli.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SFTP/sftp_cli/sftp_cli.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SFTP/sftp_rep/sftp_rep.c" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
