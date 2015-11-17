@@ -464,7 +464,7 @@ int main(int agrc , char *argc[])
 
     /*********************************************/
     /*                 ALLOCATIONS               */
-    /********************************************/
+    /*********************************************/
     /*Allocation of a matrix in order to hold all file descriptor for each servers.*/
     sock_fd=(int*)malloc(AVAIL_SERVERS * sizeof(int));
     /*Parallel matrix to hold the listen port for each server.*/
@@ -486,6 +486,9 @@ int main(int agrc , char *argc[])
     //Read operation
     //reader(buf , AVAIL_SERVERS);
     writer(buf , AVAIL_SERVERS);
+
+
+
 
     return 0;
 }

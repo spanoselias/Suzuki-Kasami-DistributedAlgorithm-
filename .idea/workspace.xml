@@ -2,6 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
+      <config projectName="DistributedAlgorithms" targetName="direc_exec" />
+      <config projectName="DistributedAlgorithms" targetName="cli_exec" />
+      <config projectName="DistributedAlgorithms" targetName="direc_Exec" />
       <config projectName="DistributedAlgorithms" targetName="FTP" />
     </generated>
   </component>
@@ -12,6 +15,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7980df8-ef1f-480a-b0ef-d7ee6e1ba085" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/fun" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/fun.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp/fun.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ABD/session.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ABD/src/text.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABD/CMakeLists.txt" afterPath="$PROJECT_DIR$/ABD/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DistributedAlgorithms.iml" afterPath="$PROJECT_DIR$/.idea/DistributedAlgorithms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABD/src/client.c" afterPath="$PROJECT_DIR$/ABD/src/client.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABD/src/client.h" afterPath="$PROJECT_DIR$/ABD/src/client.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABD/src/client.log" afterPath="$PROJECT_DIR$/ABD/src/client.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABD/src/directory.c" afterPath="$PROJECT_DIR$/ABD/src/directory.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ABD/src/makefile" afterPath="$PROJECT_DIR$/ABD/src/makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DistributedAlgorithms.iws" />
@@ -32,34 +49,33 @@
     <favorites_list name="DistributedAlgorithms" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44004726">
+    <splitter split-orientation="horizontal" split-proportion="0.5024969">
       <split-first>
         <leaf>
-          <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7733473">
-                  <caret line="283" column="9" selection-start-line="283" selection-start-column="9" selection-end-line="283" selection-end-column="9" />
-                  <folding>
-                    <element signature="e#852#870#0" expanded="true" />
-                    <element signature="e#1160#1216#1" expanded="false" />
-                    <element signature="e#4426#5070#0" expanded="false" />
-                    <element signature="e#5072#5908#0" expanded="false" />
-                  </folding>
+                <state vertical-scroll-proportion="0.12569833">
+                  <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="server.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+          <file leaf-file-name="client.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ABD/src/client.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+                  <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
                   <folding>
-                    <element signature="e#852#870#0" expanded="true" />
-                    <element signature="e#1204#1280#1" expanded="false" />
-                    <element signature="e#1764#1809#0" expanded="false" />
-                    <element signature="e#4097#4686#0" expanded="false" />
+                    <element signature="e#2405#3486#0" expanded="false" />
+                    <element signature="e#3686#4370#0" expanded="false" />
+                    <element signature="e#4570#6649#0" expanded="false" />
+                    <element signature="e#6855#10062#0" expanded="false" />
+                    <element signature="e#10261#12283#0" expanded="false" />
+                    <element signature="e#12474#14570#0" expanded="false" />
+                    <element signature="e#14761#15000#0" expanded="false" />
+                    <element signature="e#15021#15233#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -69,16 +85,17 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="client.c" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
+          <file leaf-file-name="directory.c" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ABD/src/directory.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.05666317">
-                  <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding>
                     <element signature="e#852#870#0" expanded="true" />
-                    <element signature="e#1160#1216#1" expanded="false" />
-                    <element signature="e#4426#5070#0" expanded="false" />
-                    <element signature="e#5072#5908#0" expanded="false" />
+                    <element signature="e#2160#3619#0" expanded="false" />
+                    <element signature="e#3811#4899#0" expanded="false" />
+                    <element signature="e#5098#5313#0" expanded="false" />
+                    <element signature="e#5506#5807#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -90,6 +107,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -97,9 +117,15 @@
         <option value="$PROJECT_DIR$/FTP/src/FTP_Client/client.c" />
         <option value="$PROJECT_DIR$/FTP SERVER/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/FTP SERVER/src/Replica/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/FTP SERVER/src/Replica/server.c" />
+        <option value="$PROJECT_DIR$/ABD/src/client.h" />
+        <option value="$PROJECT_DIR$/ABD/src/directory.c" />
         <option value="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c" />
+        <option value="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client_ftp.h" />
+        <option value="$PROJECT_DIR$/ABD/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client_ftp.c" />
+        <option value="$PROJECT_DIR$/ABD/src/client.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -157,6 +183,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTP SERVER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTP SERVER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DistributedAlgorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ABD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -166,6 +256,8 @@
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -173,7 +265,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ftp">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./cli 127.0.0.1 1000" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="DistributedAlgorithms" TARGET_NAME="FTP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DistributedAlgorithms" RUN_TARGET_NAME="FTP">
       <envs />
       <method />
@@ -187,17 +279,22 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ftp" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10003" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="DistributedAlgorithms" TARGET_NAME="FTP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DistributedAlgorithms" RUN_TARGET_NAME="FTP">
+    <configuration default="false" name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS=" -p 10000" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="DistributedAlgorithms" TARGET_NAME="cli_exec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DistributedAlgorithms" RUN_TARGET_NAME="cli_exec">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="./ser 1000" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="DistributedAlgorithms" TARGET_NAME="FTP" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DistributedAlgorithms" RUN_TARGET_NAME="FTP">
+    <configuration default="false" name="cli_exec" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="DistributedAlgorithms" TARGET_NAME="cli_exec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DistributedAlgorithms" RUN_TARGET_NAME="cli_exec">
       <envs />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.ftp" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Unnamed" />
+    <configuration default="false" name="direc_exec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="DistributedAlgorithms" TARGET_NAME="direc_exec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DistributedAlgorithms" RUN_TARGET_NAME="direc_exec">
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Application.cli_exec" />
+      <item index="2" class="java.lang.String" itemvalue="Application.direc_exec" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -215,26 +312,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17196766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12554584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3377416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17083333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22291666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16174975" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2024415" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16174975" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -250,7 +347,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -260,36 +357,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding>
-            <element signature="e#852#870#0" expanded="true" />
+            <element signature="e#852#870#0" expanded="false" />
             <element signature="e#1204#1280#1" expanded="false" />
             <element signature="e#1764#1809#0" expanded="false" />
             <element signature="e#4097#4686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -299,124 +370,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
           <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1204#1280#1" expanded="false" />
-            <element signature="e#1764#1809#0" expanded="false" />
-            <element signature="e#4097#4686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="56" selection-start-line="248" selection-start-column="56" selection-end-line="248" selection-end-column="56" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1204#1280#1" expanded="false" />
-            <element signature="e#1764#1809#0" expanded="false" />
-            <element signature="e#4097#4686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="56" selection-start-line="248" selection-start-column="56" selection-end-line="248" selection-end-column="56" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1204#1280#1" expanded="false" />
-            <element signature="e#1764#1809#0" expanded="false" />
-            <element signature="e#4097#4686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="199" column="9" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="9" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1204#1280#1" expanded="false" />
-            <element signature="e#1764#1809#0" expanded="false" />
-            <element signature="e#4097#4686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="196" column="75" selection-start-line="196" selection-start-column="75" selection-end-line="196" selection-end-column="75" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
+            <element signature="e#852#870#0" expanded="false" />
             <element signature="e#1204#1280#1" expanded="false" />
             <element signature="e#1764#1809#0" expanded="false" />
             <element signature="e#4097#4686#0" expanded="false" />
@@ -429,10 +383,146 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#852#870#0" expanded="true" />
+            <element signature="e#852#870#0" expanded="false" />
             <element signature="e#1204#1280#1" expanded="false" />
             <element signature="e#1764#1809#0" expanded="false" />
             <element signature="e#4097#4686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#852#870#0" expanded="false" />
+            <element signature="e#1204#1280#1" expanded="false" />
+            <element signature="e#1764#1809#0" expanded="false" />
+            <element signature="e#4097#4686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#852#870#0" expanded="false" />
+            <element signature="e#1204#1280#1" expanded="false" />
+            <element signature="e#1764#1809#0" expanded="false" />
+            <element signature="e#4097#4686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#852#870#0" expanded="false" />
+            <element signature="e#1204#1280#1" expanded="false" />
+            <element signature="e#1764#1809#0" expanded="false" />
+            <element signature="e#4097#4686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#852#870#0" expanded="false" />
+            <element signature="e#1204#1280#1" expanded="false" />
+            <element signature="e#1764#1809#0" expanded="false" />
+            <element signature="e#4097#4686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ABD/src/client.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#235#274#1" expanded="false" />
+            <element signature="e#277#365#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43441764">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="e#852#870#0" expanded="false" />
+            <element signature="e#1204#1280#1" expanded="false" />
+            <element signature="e#1764#1809#0" expanded="false" />
+            <element signature="e#4097#4686#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/client.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ABD/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client_ftp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client_ftp.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="283" column="12" selection-start-line="283" selection-start-column="12" selection-end-line="283" selection-end-column="12" />
+          <folding>
+            <element signature="e#1288#2663#0" expanded="false" />
+            <element signature="e#2665#4396#0" expanded="false" />
+            <element signature="e#4398#5042#0" expanded="false" />
+            <element signature="e#5044#5880#0" expanded="false" />
+            <element signature="e#5882#7623#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ABD/src/directory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.076595746">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ABD/src/directory.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#852#870#0" expanded="true" />
+            <element signature="e#2160#3619#0" expanded="false" />
+            <element signature="e#3811#4899#0" expanded="false" />
+            <element signature="e#5098#5313#0" expanded="false" />
+            <element signature="e#5506#5807#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -440,40 +530,25 @@
     <entry file="file://$PROJECT_DIR$/ABD/src/client.c">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="3" selection-start-line="47" selection-start-column="0" selection-end-line="49" selection-end-column="85" />
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#2405#3486#0" expanded="false" />
+            <element signature="e#3686#4370#0" expanded="false" />
+            <element signature="e#4570#6649#0" expanded="false" />
+            <element signature="e#6855#10062#0" expanded="false" />
+            <element signature="e#10261#12283#0" expanded="false" />
+            <element signature="e#12474#14570#0" expanded="false" />
+            <element signature="e#14761#15000#0" expanded="false" />
+            <element signature="e#15021#15233#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/Replica/server.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1204#1280#1" expanded="false" />
-            <element signature="e#1764#1809#0" expanded="false" />
-            <element signature="e#4097#4686#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FTP SERVER/src/FTP_Client/client.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.05666317">
-          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-          <folding>
-            <element signature="e#852#870#0" expanded="true" />
-            <element signature="e#1160#1216#1" expanded="false" />
-            <element signature="e#4426#5070#0" expanded="false" />
-            <element signature="e#5072#5908#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.12569833">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>

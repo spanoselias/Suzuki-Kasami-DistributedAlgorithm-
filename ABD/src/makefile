@@ -1,10 +1,16 @@
 CC=gcc
 
-make:  directory.c client.c  
+commMake: client.c
 	$(CC) client.c  -o cli
-	$(CC) directory.c -o dir
-	 
+
+all: run
+
+run: cli
+	./icli  
+
+.PHONY: all run
 
 clean:
-	rm -f *.o cli rep  
+	rm -f *.o
+
 

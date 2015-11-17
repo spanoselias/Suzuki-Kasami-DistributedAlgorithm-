@@ -412,7 +412,7 @@ int main(int argc , char *argv[])
                         }
 
                         }//While statment
-                            ;
+
                 }//Switch statment
         }//While(1)
 

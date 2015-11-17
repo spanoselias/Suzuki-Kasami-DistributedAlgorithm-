@@ -25,7 +25,4 @@ struct message
 };
 
 
-
-
-
 #endif //DISTRIBUTEDALGORITHM_CLIENT_H
