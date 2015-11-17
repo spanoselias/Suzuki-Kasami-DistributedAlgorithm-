@@ -8,8 +8,8 @@ set(client_SOURCE_FILES ABD/src/client.c ABD/src/client.h)
 set(direc_SOURCE_FILES ABD/src/directory.c ABD/src/directory.h)
 
 #Makefile for file transfer protocol
-set(ftp_Server_SOURCE_FILES )
-set(ftp_client_SOURCE_FILES ABD/src/directory.c ABD/src/directory.h)
+set(ftp_client_SOURCE_FILES SFTP/src/sftp_cli/sftp_cli.c SFTP/src/sftp_cli/sftp_cli.h )
+set(ftp_Server_SOURCE_FILES SFTP/src/sftp_rep/sftp_rep.c)
 
 #Executable for ABD algorithm
 add_executable(cli_exec ${client_SOURCE_FILES})

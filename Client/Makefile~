@@ -1,7 +1,7 @@
 CC=gcc
 
 commMake: client.c
-	$(CC) client.c  -o cli
+	$(CC)client.c -o icli  ../temp/fun.c  
 
 all: run
 
@@ -11,6 +11,5 @@ run: cli
 .PHONY: all run
 
 clean:
-	rm -f *.o
-
+	rm -f *.o  
 
