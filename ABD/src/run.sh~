@@ -1,5 +1,0 @@
-#!/bin/bash
-gcc client.c  -o cli
-gcc directory.c -o direc
-
-./direc 10000

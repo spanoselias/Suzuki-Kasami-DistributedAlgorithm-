@@ -1,5 +1,0 @@
-It gets this information from the CMakeLists.txt files in the following way:
-set(SOURCE_FILES main.cpp)
-add_executable(my_exec ${SOURCE_FILES})
-This is how CLion now knows that main.cpp is included in your project. As for now, header files (in case their names differ from the appropriate .cpp files already added to the SOURCE_FILES variable) should also be included in the project in that way.
-

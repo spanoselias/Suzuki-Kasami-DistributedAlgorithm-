@@ -1,8 +1,0 @@
-Accepted connection from IP:127.0.0.1 , port:10001
-WREAD-OK,10,5,1Accepted connection from IP:127.0.0.1 , port:10001
-Accepted connection from IP:127.0.0.1 , port:10002
-Accepted connection from IP:127.0.0.1 , port:10003
-WREAD-OK,10,5,1WREAD-OK,10,5,1WREAD-OK,10,5,1WWRITE-OK,2
-WWRITE-OK,2
-LATEST VALUES,11,6,89,2LATEST VALUES,11,6,89,2WWRITE-OK,2
-LATEST VALUES,11,6,89,2
